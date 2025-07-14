@@ -1,0 +1,68 @@
+.difficulty-indicator {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.difficulty-label {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.difficulty-level {
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.difficulty-indicator.changing .difficulty-level {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.difficulty-stats {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  padding-left: 15px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stats-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 0;
+  font-size: 0.8rem;
+}
+
+.stats-item span:first-child {
+  margin-right: 8px;
+  opacity: 0.8;
+}
+
+.stats-item span:last-child {
+  font-weight: bold;
+}

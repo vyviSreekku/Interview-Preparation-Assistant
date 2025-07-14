@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+.env
+
+# Logs
+*.log
+logs/
+log/
+
+# Frontend
+node_modules/
+coverage/
+.next/
+out/
+.nuxt/
+.vuepress/dist
+.serverless/
+.cache/
+.parcel-cache/
+.DS_Store
+
+# IDE/Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.sublime-workspace
+*.sublime-project
+.atom/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+ehthumbs_vista.db
+desktop.ini
+
+# Project specific
+uploads/
+temp_audio
+ffmpeg
